@@ -1,0 +1,19 @@
+.home-page { color:#f5efe6; background:#211b1d; min-height:100vh; }
+.home-hero { min-height:570px; display:flex; align-items:center; background:radial-gradient(circle at 78% 38%, rgba(111,29,48,.42), transparent 30%), linear-gradient(115deg,#1d1719 0%,#2a1b20 56%,#401725 100%); border-bottom:1px solid rgba(255,255,255,.08); }
+.home-hero-inner { width:min(1180px, calc(100% - 80px)); margin:auto; padding:80px 0; }
+.home-kicker,.home-section-heading>p { text-transform:uppercase; letter-spacing:.22em; color:#cba78d; font-size:13px; font-weight:600; }
+.home-hero h1 { font-family:Georgia,'Times New Roman',serif; font-weight:400; font-size:clamp(58px,8vw,112px); line-height:.88; letter-spacing:-.04em; margin:22px 0 28px; max-width:900px; }
+.home-intro { max-width:580px; color:#d9cfca; font-size:19px; line-height:1.6; margin-bottom:36px; }
+.home-primary-button { display:inline-block; background:#7b263d; color:white; text-decoration:none; padding:16px 24px; border:1px solid #9e5265; border-radius:3px; font-weight:600; }
+.home-primary-button:hover { background:#91324d; }
+.home-sales { width:min(1180px,calc(100% - 80px)); margin:auto; padding:90px 0; }
+.home-section-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:30px; margin-bottom:42px; }
+.home-section-heading h2,.home-about h2 { font-family:Georgia,'Times New Roman',serif; font-size:clamp(34px,4vw,54px); line-height:1.05; font-weight:400; max-width:690px; margin:0; }
+.sales-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.sale-card { min-height:310px; padding:28px; border:1px solid rgba(255,255,255,.12); color:#fff; text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; transition:.2s ease; background:linear-gradient(145deg,#3d1723,#251c1f); }
+.sale-card-salmon { background:linear-gradient(145deg,#49302c,#251c1f); }.sale-card-tree{background:linear-gradient(145deg,#263329,#1d211f);}
+.sale-card:hover { transform:translateY(-4px); border-color:#cba78d; }
+.sale-number { color:#cba78d; font-size:13px; letter-spacing:.15em; }.sale-card h3{font-family:Georgia,'Times New Roman',serif;font-size:38px;font-weight:400;margin:0 0 10px}.sale-card p{color:#cfc4bf;line-height:1.5}.sale-link{font-size:14px;color:#ead8ca;font-weight:600}
+.home-about { border-top:1px solid rgba(255,255,255,.08); padding:90px max(40px,calc((100% - 1180px)/2)); background:#f0e8dc; color:#2a2022; }
+.home-about .home-kicker { color:#7b263d; }.home-about p:last-child{max-width:700px;font-size:18px;line-height:1.7;color:#625557;margin-top:28px}
+@media(max-width:760px){.home-hero-inner,.home-sales{width:calc(100% - 40px)}.home-hero{min-height:500px}.home-section-heading{display:block}.sales-grid{grid-template-columns:1fr}.sale-card{min-height:230px}.home-about{padding:70px 20px}}
